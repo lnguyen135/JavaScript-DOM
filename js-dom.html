@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="developer" style=" color:orange ;  font-size:40px;"> Developers for life! </p>
+<p id="coder">We are coders! </p>
+
+<img id="myImg" src="C:\Users\lnguy\code differently project\christmas images.jpg" alt="christmas" width="304" height="228">
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg").src;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+<p>Click the button to hides the image.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myImg");
+  if(x.style.display==="none"){
+    x.style.display="block";
+  }else{
+    x.style.display="none";
+  }
+  }
+
+  
+</script>
+</body>
+</html>
